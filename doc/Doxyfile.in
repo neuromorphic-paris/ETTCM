@@ -1,0 +1,11 @@
+OUTPUT_DIRECTORY       = @DOXYGEN_OUTPUT_DIR@
+INPUT                  = @CMAKE_CURRENT_SOURCE_DIR@/../include @CMAKE_CURRENT_SOURCE_DIR@/main.dox
+PROJECT_NAME           = ETTCM
+RECURSIVE              = YES
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+EXPAND_ONLY_PREDEF     = YES
+GENERATE_XML           = YES
+USE_MATHJAX            = YES
+PREDEFINED             = __attribute__(x)= \
+                         ETTCM_FAST_EXP
